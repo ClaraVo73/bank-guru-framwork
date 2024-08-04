@@ -88,6 +88,7 @@ public class BasePage {
 
         }
     }
+
     public void closeAllTabWithoutParent(WebDriver driver, String parentID) {
         Set<String> allWindowIDs = driver.getWindowHandles();
         for (String id : allWindowIDs) {
@@ -106,17 +107,17 @@ public class BasePage {
 
     private By getByLocator(String locatorType) {
         By by = null;
-        if (locatorType.startsWith("id=") || locatorType.startsWith("ID=") || locatorType.startsWith("Id=")){
+        if (locatorType.startsWith("id=") || locatorType.startsWith("ID=") || locatorType.startsWith("Id=")) {
             by = By.id(locatorType.substring(3));
-        }else if (locatorType.startsWith("css=") || locatorType.startsWith("CSS=") || locatorType.startsWith("Css=")){
+        } else if (locatorType.startsWith("css=") || locatorType.startsWith("CSS=") || locatorType.startsWith("Css=")) {
             by = By.cssSelector(locatorType.substring(4));
-        }else if (locatorType.startsWith("xpath=") || locatorType.startsWith("XPATH=") || locatorType.startsWith("Xpath=")){
+        } else if (locatorType.startsWith("xpath=") || locatorType.startsWith("XPATH=") || locatorType.startsWith("Xpath=")) {
             by = By.xpath(locatorType.substring(6));
-        }else if (locatorType.startsWith("name=") || locatorType.startsWith("NAME=") || locatorType.startsWith("Name=")){
+        } else if (locatorType.startsWith("name=") || locatorType.startsWith("NAME=") || locatorType.startsWith("Name=")) {
             by = By.name(locatorType.substring(5));
-        }else if (locatorType.startsWith("class=") || locatorType.startsWith("CLASS=") || locatorType.startsWith("Class=")){
+        } else if (locatorType.startsWith("class=") || locatorType.startsWith("CLASS=") || locatorType.startsWith("Class=")) {
             by = By.className(locatorType.substring(6));
-        }else {
+        } else {
             throw new RuntimeException("Locator type is not supported!");
         }
         return by;
@@ -139,6 +140,12 @@ public class BasePage {
         element.clear();
         element.sendKeys(textValue);
     }
+    public void sendKeyActionsToElement(WebDriver driver, String locatorType, CharSequence... keys) {
+        WebElement element = getWebElement(driver, locatorType);
+        element.clear();
+        element.sendKeys(keys);
+    }
+
 
     public void selectItemInDefaultDropdown(WebDriver driver, String locatorType, String textItem) {
         Select select = new Select(getWebElement(driver, locatorType));
