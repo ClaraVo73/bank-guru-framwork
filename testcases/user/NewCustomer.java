@@ -29,7 +29,10 @@ public class NewCustomer extends BaseTest {
 
     @Test
     public void NC01_Name_Cannot_Be_Empty() {
-        newCustomerPage = homePage.clickToNewCustomerLink();
+        homePage.openPagesFromMenuSub(driver,"New Customer");
+        newCustomerPage = PageGeneratorManager.getNewCustomerPage(driver);
+
+       // newCustomerPage = homePage.clickToNewCustomerLink();
         newCustomerPage.inputActionsToCustomerName(Keys.TAB);
         Assert.assertEquals(newCustomerPage.getErrorMessageAtUserIDTextbox(), "Customer name must not be blank");
     }

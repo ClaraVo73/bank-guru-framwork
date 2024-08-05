@@ -6,6 +6,7 @@ import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import user.HomePageUI;
 
 import java.util.List;
 import java.util.Set;
@@ -151,6 +152,12 @@ public class BasePage {
         WebElement element = getWebElement(driver, locatorType);
         element.clear();
         element.sendKeys(textValue);
+    }
+
+    public void sendKeyActionsToElement(WebDriver driver, String locatorType, CharSequence... key) {
+        WebElement element = getWebElement(driver, locatorType);
+        element.clear();
+        element.sendKeys(key);
     }
 
     public void sendKeyToElement(WebDriver driver, String locatorType, String textValue, String... dynamicValues) {
@@ -378,4 +385,8 @@ public class BasePage {
 
     private long longTimeout = 30;
 
+    public void openPagesFromMenuSub(WebDriver driver, String pageName) {
+        waitForElementClickable(driver, HomePageUI.MENU_SUB_LINK, pageName);
+        clickToElement(driver, HomePageUI.MENU_SUB_LINK, pageName);
+    }
 }
