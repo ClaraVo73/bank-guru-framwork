@@ -3,7 +3,7 @@ package commons;
 import org.openqa.selenium.WebDriver;
 import pageObjects.user.HomePageObject;
 import pageObjects.user.LoginPageObject;
-import pageObjects.user.NewCustomerPageObject;
+import pageObjects.user.CustomerPageObject;
 
 public class PageGeneratorManager {
     public static LoginPageObject getLoginPage(WebDriver driver) {
@@ -12,7 +12,8 @@ public class PageGeneratorManager {
     public static HomePageObject getHomePage(WebDriver driver) {
         return new HomePageObject(driver);
     }
-    public static NewCustomerPageObject getNewCustomerPage(WebDriver driver) {
-        return new NewCustomerPageObject(driver);
+    public static CustomerPageObject getCustomerPage(WebDriver driver) {
+        return new CustomerPageObject(driver);
     }
+
 }

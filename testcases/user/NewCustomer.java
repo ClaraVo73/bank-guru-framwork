@@ -10,14 +10,14 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.user.HomePageObject;
 import pageObjects.user.LoginPageObject;
-import pageObjects.user.NewCustomerPageObject;
+import pageObjects.user.CustomerPageObject;
 
 import java.util.Random;
 
 public class NewCustomer extends BaseTest {
     private LoginPageObject loginPage;
     private HomePageObject homePage;
-    private NewCustomerPageObject newCustomerPage;
+    private CustomerPageObject newCustomerPage;
 
     @Parameters({"browser", "environment"})
     @BeforeClass
@@ -25,13 +25,13 @@ public class NewCustomer extends BaseTest {
         driver = getBrowserDriver(browserName, environmentName);
         loginPage = PageGeneratorManager.getLoginPage(driver);
         homePage = loginPage.loginUser("mngr584256", "YsysYdU");
+        homePage.openPagesFromMenuSub(driver,"New Customer");
+        newCustomerPage = PageGeneratorManager.getCustomerPage(driver);
+        //newCustomerPage.cancelAlert(driver);
     }
 
     @Test
     public void NC01_Name_Cannot_Be_Empty() {
-        homePage.openPagesFromMenuSub(driver,"New Customer");
-        newCustomerPage = PageGeneratorManager.getNewCustomerPage(driver);
-
         newCustomerPage.inputActionsToCustomerName(Keys.TAB);
         Assert.assertEquals(newCustomerPage.getErrorMessageAtUserIDTextbox(), "Customer name must not be blank");
     }
@@ -234,7 +234,7 @@ public class NewCustomer extends BaseTest {
 
     @AfterClass
     public void afterClass() {
-       driver.quit();
+       //driver.quit();
     }
 
     public int numberRandom() {
