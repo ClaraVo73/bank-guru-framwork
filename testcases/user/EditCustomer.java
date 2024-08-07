@@ -165,7 +165,7 @@ public class EditCustomer extends BaseTest {
 
     @AfterClass
     public void afterClass() {
-        driver.quit();
+        //driver.quit();
     }
 
     public int numberRandom() {

@@ -1,6 +1,7 @@
 package user;
 
 import commons.BaseTest;
+import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
@@ -12,6 +13,7 @@ import pageObjects.user.HomePageObject;
 import pageObjects.user.LoginPageObject;
 import pageObjects.user.CustomerPageObject;
 
+import java.sql.Driver;
 import java.util.Random;
 
 public class NewCustomer extends BaseTest {
@@ -24,10 +26,10 @@ public class NewCustomer extends BaseTest {
     public void beforeClass(String browserName, String environmentName) {
         driver = getBrowserDriver(browserName, environmentName);
         loginPage = PageGeneratorManager.getLoginPage(driver);
-        homePage = loginPage.loginUser("mngr584256", "YsysYdU");
+        homePage = loginPage.loginUser(GlobalConstants.USER_NAME, GlobalConstants.PASSWORD);
         homePage.openPagesFromMenuSub(driver,"New Customer");
         newCustomerPage = PageGeneratorManager.getCustomerPage(driver);
-        //newCustomerPage.cancelAlert(driver);
+       // newCustomerPage.closeAdvertisement();
     }
 
     @Test

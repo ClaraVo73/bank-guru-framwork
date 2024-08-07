@@ -6,6 +6,7 @@ import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import user.BasePageUI;
 import user.HomePageUI;
 
 import java.util.List;
@@ -276,6 +277,7 @@ public class BasePage {
 
     public void switchToFrameIframe(WebDriver driver, String locatorType) {
         driver.switchTo().frame(getWebElement(driver, locatorType));
+        driver.quit();
     }
 
     public void switchToDefaultContent(WebDriver driver) {
@@ -389,4 +391,6 @@ public class BasePage {
         waitForElementClickable(driver, HomePageUI.MENU_SUB_LINK, pageName);
         clickToElement(driver, HomePageUI.MENU_SUB_LINK, pageName);
     }
+
+
 }

@@ -4,6 +4,7 @@ import commons.BasePage;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import user.BasePageUI;
 import user.CustomerPageUI;
 
 public class CustomerPageObject extends BasePage {
@@ -155,5 +156,12 @@ public class CustomerPageObject extends BasePage {
     public boolean isAllLabelsAtNewCustomerPageDisplayed(String labelName) {
         waitForElementVisible(driver, CustomerPageUI.ALL_LABEL,labelName);
         return isElementDisplayed(driver, CustomerPageUI.ALL_LABEL,labelName);
+    }
+
+    public void closeAdvertisement() {
+        waitForElementVisible(driver, BasePageUI.ADVERTISEMENT_IFRAME);
+        switchToFrameIframe(driver, BasePageUI.ADVERTISEMENT_IFRAME);
+        //clickToElement(driver, BasePageUI.ADVERTISEMENT_CLOSE_BUTTON);
+
     }
 }
