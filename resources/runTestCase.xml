@@ -5,7 +5,7 @@
     <test name="Run on Chrome">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="user.NewAccount"></class>
+            <class name="user.EditAccount"></class>
         </classes>
 
     </test>

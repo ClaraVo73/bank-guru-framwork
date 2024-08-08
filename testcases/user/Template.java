@@ -1,6 +1,7 @@
 package user;
 
 import commons.BaseTest;
+import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -18,11 +19,11 @@ public class Template extends BaseTest {
     @Parameters({"browser", "environment"})
     @BeforeClass
     public void beforeClass(String browserName, String environmentName) {
-        driver = getBrowserDriver(browserName,environmentName);
+        driver = getBrowserDriver(browserName, environmentName);
         loginPage = PageGeneratorManager.getLoginPage(driver);
-        homePage = loginPage.loginUser("mngr584256", "YsysYdU");
-        homePage.openPagesFromMenuSub(driver,"New Customer");
-       // newCustomerPage = PageGeneratorManager.getCustomerPage(driver);
+        homePage = loginPage.loginUser(GlobalConstants.USER_NAME, GlobalConstants.PASSWORD);
+        homePage.openPagesFromMenuSub(driver, "New Customer");
+        // newCustomerPage = PageGeneratorManager.getCustomerPage(driver);
     }
 
     @Test
