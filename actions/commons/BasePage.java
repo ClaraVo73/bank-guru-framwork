@@ -6,7 +6,9 @@ import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageObjects.user.AccountPageObject;
 import pageObjects.user.CustomerPageObject;
+import user.AccountPageUI;
 import user.BasePageUI;
 import user.CustomerPageUI;
 import user.HomePageUI;
@@ -393,6 +395,7 @@ public class BasePage {
         waitForElementClickable(driver, HomePageUI.MENU_SUB_LINK, pageName);
         clickToElement(driver, HomePageUI.MENU_SUB_LINK, pageName);
     }
+
     //CustomerID
     public CustomerPageObject inputActionsToCustomerID(WebDriver driver, Keys key) {
         waitForElementVisible(driver, BasePageUI.CUSTOMER_ID_TEXTBOX);
@@ -400,9 +403,9 @@ public class BasePage {
         return PageGeneratorManager.getCustomerPage(driver);
     }
 
-    public void inputToCustomerID(WebDriver driver,String customerId) {
+    public void inputToCustomerID(WebDriver driver, String customerId) {
         waitForElementVisible(driver, BasePageUI.CUSTOMER_ID_TEXTBOX);
-        sendKeyToElement(driver, BasePageUI.CUSTOMER_ID_TEXTBOX,customerId);
+        sendKeyToElement(driver, BasePageUI.CUSTOMER_ID_TEXTBOX, customerId);
     }
 
     public String getErrorMessageAtCustomerIDTextbox(WebDriver driver) {
@@ -410,6 +413,22 @@ public class BasePage {
         return getElementText(driver, BasePageUI.CUSTOMER_ID_ERROR_MESSAGE);
     }
 
+    //AccountNo
+    public AccountPageObject inputActionsToAccountNoTextbox(WebDriver driver, Keys key) {
+        waitForElementVisible(driver, BasePageUI.ACCOUNT_NO_TEXTBOX);
+        sendKeyActionsToElement(driver, BasePageUI.ACCOUNT_NO_TEXTBOX, key);
+        return PageGeneratorManager.getAccountPage(driver);
+    }
+
+    public void inputToAccountNoTextbox(WebDriver driver, String accountNo) {
+        waitForElementVisible(driver, BasePageUI.ACCOUNT_NO_TEXTBOX);
+        sendKeyToElement(driver, BasePageUI.ACCOUNT_NO_TEXTBOX, accountNo);
+    }
+
+    public String getErrorMessageAtAccountNoTextbox(WebDriver driver) {
+        waitForElementVisible(driver, BasePageUI.ACCOUNT_NO_ERROR_MESSAGE);
+        return getElementText(driver, BasePageUI.ACCOUNT_NO_ERROR_MESSAGE);
+    }
 
 
 }

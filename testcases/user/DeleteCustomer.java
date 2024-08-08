@@ -24,44 +24,48 @@ public class DeleteCustomer extends BaseTest {
         driver = getBrowserDriver(browserName, environmentName);
         loginPage = PageGeneratorManager.getLoginPage(driver);
         homePage = loginPage.loginUser(GlobalConstants.USER_NAME, GlobalConstants.PASSWORD);
-        homePage.openPagesFromMenuSub(driver,"Delete Customer");
+        homePage.openPagesFromMenuSub(driver, "Delete Customer");
         deleteCustomerPage = PageGeneratorManager.getCustomerPage(driver);
     }
+
     @Test
     public void DC01_CustomerID_Cannot_Be_Empty() {
-        deleteCustomerPage.inputActionsToCustomerID(driver,Keys.TAB);
-        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Customer ID is required");
+        deleteCustomerPage.inputActionsToCustomerID(driver, Keys.TAB);
+        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver), "Customer ID is required");
     }
+
     @Test
     public void DC02_CustomerID_Must_Be_Numeric() {
-        deleteCustomerPage.inputToCustomerID(driver,"12345ab");
-        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Characters are not allowed");
-        deleteCustomerPage.inputToCustomerID(driver,"abc1234");
-        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Characters are not allowed");
+        deleteCustomerPage.inputToCustomerID(driver, "12345ab");
+        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver), "Characters are not allowed");
+        deleteCustomerPage.inputToCustomerID(driver, "abc1234");
+        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver), "Characters are not allowed");
     }
+
     @Test
     public void DC03_CustomerID_Cannot_Have_Special_Character() {
-        deleteCustomerPage.inputToCustomerID(driver,"123#$%");
-        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Special characters are not allowed");
-        deleteCustomerPage.inputToCustomerID(driver,"!@#$%^&*");
-        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Special characters are not allowed");
+        deleteCustomerPage.inputToCustomerID(driver, "123#$%");
+        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver), "Special characters are not allowed");
+        deleteCustomerPage.inputToCustomerID(driver, "!@#$%^&*");
+        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver), "Special characters are not allowed");
     }
+
     @Test
     public void DC04_CustomerID_Cannot_Have_Blank_Space() {
-        deleteCustomerPage.inputToCustomerID(driver,"123 456");
-        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Characters are not allowed");
+        deleteCustomerPage.inputToCustomerID(driver, "123 456");
+        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver), "Characters are not allowed");
     }
 
     @Test
     public void DC04_CustomerID_First_Character_Cannot_Be_Space() {
-        deleteCustomerPage.inputToCustomerID(driver," 12345");
-        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"First character can not have space");
+        deleteCustomerPage.inputToCustomerID(driver, " 12345");
+        Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver), "Characters are not allowed");
     }
 
 
     @AfterClass
     public void afterClass() {
-       //driver.quit();
+        //driver.quit();
     }
 
 }

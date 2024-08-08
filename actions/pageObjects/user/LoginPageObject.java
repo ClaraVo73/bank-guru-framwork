@@ -12,21 +12,6 @@ public class LoginPageObject extends BasePage {
     public LoginPageObject(WebDriver driver){
         this.driver = driver;
     }
-    public LoginPageObject inputActionsToUserID(Keys key) {
-        waitForElementVisible(driver, LoginPageUI.USERID_TEXTBOX);
-        sendKeyActionsToElement(driver, LoginPageUI.USERID_TEXTBOX,key);
-        return PageGeneratorManager.getLoginPage(driver);
-    }
-
-    public String getErrorMessageAtUserIDTextbox() {
-        waitForElementVisible(driver, LoginPageUI.USERID_ERROR_MESSAGE);
-        return getElementText(driver, LoginPageUI.USERID_ERROR_MESSAGE);
-    }
-
-    public String getErrorMessageAtPassWordTextbox() {
-        waitForElementVisible(driver, LoginPageUI.PASSWORD_ERROR_MESSAGE);
-        return getElementText(driver, LoginPageUI.PASSWORD_ERROR_MESSAGE);
-    }
 
     public void inputToUserID(String userName) {
         waitForElementVisible(driver,LoginPageUI.USERID_TEXTBOX);

@@ -20,20 +20,9 @@ public class AccountPageObject extends BasePage {
         return PageGeneratorManager.getAccountPage(driver);
     }
 
-    public AccountPageObject inputActionsToAccountNoTextbox(Keys key) {
-        waitForElementVisible(driver, AccountPageUI.ACCOUNT_NO_TEXTBOX);
-        sendKeyActionsToElement(driver, AccountPageUI.ACCOUNT_NO_TEXTBOX, key);
-        return PageGeneratorManager.getAccountPage(driver);
-    }
-
     public void inputToInitialDepositTextbox(String initialDeposit) {
         waitForElementVisible(driver, AccountPageUI.INITIAL_DEPOSIT_TEXTBOX);
         sendKeyToElement(driver, AccountPageUI.INITIAL_DEPOSIT_TEXTBOX, initialDeposit);
-    }
-
-    public void inputToAccountNoTextbox(String accountNo) {
-        waitForElementVisible(driver, AccountPageUI.ACCOUNT_NO_TEXTBOX);
-        sendKeyToElement(driver, AccountPageUI.ACCOUNT_NO_TEXTBOX, accountNo);
     }
 
     public String getErrorMessageAtInitialDepositTextbox() {
@@ -41,8 +30,4 @@ public class AccountPageObject extends BasePage {
         return getElementText(driver, AccountPageUI.INITIAL_DEPOSIT_ERROR_MESSAGE);
     }
 
-    public String getErrorMessageAtAccountNoTextbox() {
-        waitForElementVisible(driver, AccountPageUI.ACCOUNT_NO_ERROR_MESSAGE);
-        return getElementText(driver, AccountPageUI.ACCOUNT_NO_ERROR_MESSAGE);
-    }
 }
