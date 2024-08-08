@@ -5,9 +5,7 @@
     <test name="Run on Chrome">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="user.CustomisedStatement"></class>
-            <class name="user.MiniStatement"></class>
-            <class name="user.DeleteAccount"></class>
+            <class name="user.ChangePassword"></class>
         </classes>
 
     </test>

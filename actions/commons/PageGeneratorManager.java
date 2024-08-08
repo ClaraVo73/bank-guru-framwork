@@ -22,5 +22,14 @@ public class PageGeneratorManager {
     public static CustomisedStatementPageObject getCustomisedStatementPage(WebDriver driver){
         return new CustomisedStatementPageObject(driver);
     }
+    public static FundTransferPageObject getFundTransferPage(WebDriver driver){
+        return new FundTransferPageObject(driver);
+    }
+    public static ChangePasswordPageObject getChangePasswordPage(WebDriver driver){
+        return new ChangePasswordPageObject(driver);
+    }
+    public static PaymentPageObject getPaymentPage(WebDriver driver){
+        return new PaymentPageObject(driver);
+    }
 
 }
