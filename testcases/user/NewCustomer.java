@@ -13,7 +13,6 @@ import pageObjects.user.HomePageObject;
 import pageObjects.user.LoginPageObject;
 import pageObjects.user.CustomerPageObject;
 
-import java.sql.Driver;
 import java.util.Random;
 
 public class NewCustomer extends BaseTest {
@@ -239,9 +238,5 @@ public class NewCustomer extends BaseTest {
        //driver.quit();
     }
 
-    public int numberRandom() {
-        Random rand = new Random();
-        return rand.nextInt(99999);
-    }
 
 }

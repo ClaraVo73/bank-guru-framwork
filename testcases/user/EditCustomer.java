@@ -168,9 +168,4 @@ public class EditCustomer extends BaseTest {
         //driver.quit();
     }
 
-    public int numberRandom() {
-        Random rand = new Random();
-        return rand.nextInt(99999);
-    }
-
 }
