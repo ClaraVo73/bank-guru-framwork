@@ -57,11 +57,6 @@ public class CustomerPageObject extends BasePage {
         return PageGeneratorManager.getCustomerPage(driver);
     }
 
-    public CustomerPageObject inputActionsToCustomerID(Keys key) {
-        waitForElementVisible(driver, CustomerPageUI.CUSTOMER_ID_TEXTBOX);
-        sendKeyActionsToElement(driver, CustomerPageUI.CUSTOMER_ID_TEXTBOX, key);
-        return PageGeneratorManager.getCustomerPage(driver);
-    }
 
     public void inputToCustomerName(String customerName) {
         waitForElementVisible(driver, CustomerPageUI.CUSTOMER_NAME_TEXTBOX);
@@ -96,11 +91,6 @@ public class CustomerPageObject extends BasePage {
     public void inputToEmail(String email) {
         waitForElementVisible(driver, CustomerPageUI.EMAIL_TEXTBOX);
         sendKeyToElement(driver, CustomerPageUI.EMAIL_TEXTBOX, email);
-    }
-
-    public void inputToCustomerID(String customerId) {
-        waitForElementVisible(driver, CustomerPageUI.CUSTOMER_ID_TEXTBOX);
-        sendKeyToElement(driver, CustomerPageUI.CUSTOMER_ID_TEXTBOX,customerId);
     }
 
     public String getErrorMessageAtUserIDTextbox() {
@@ -138,11 +128,6 @@ public class CustomerPageObject extends BasePage {
         return getElementText(driver, CustomerPageUI.EMAIL_ERROR_MESSAGE);
     }
 
-    public String getErrorMessageAtCustomerIDTextbox() {
-        waitForElementVisible(driver, CustomerPageUI.CUSTOMER_ID_ERROR_MESSAGE);
-        return getElementText(driver, CustomerPageUI.CUSTOMER_ID_ERROR_MESSAGE);
-    }
-
     public void clickToEditSubmitButton() {
         waitForElementClickable(driver, CustomerPageUI.SUBMIT_BUTTON);
         clickToElement(driver, CustomerPageUI.SUBMIT_BUTTON);
@@ -161,7 +146,5 @@ public class CustomerPageObject extends BasePage {
     public void closeAdvertisement() {
         waitForElementVisible(driver, BasePageUI.ADVERTISEMENT_IFRAME);
         switchToFrameIframe(driver, BasePageUI.ADVERTISEMENT_IFRAME);
-        //clickToElement(driver, BasePageUI.ADVERTISEMENT_CLOSE_BUTTON);
-
     }
 }

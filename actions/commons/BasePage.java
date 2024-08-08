@@ -6,7 +6,9 @@ import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageObjects.user.CustomerPageObject;
 import user.BasePageUI;
+import user.CustomerPageUI;
 import user.HomePageUI;
 
 import java.util.List;
@@ -391,6 +393,23 @@ public class BasePage {
         waitForElementClickable(driver, HomePageUI.MENU_SUB_LINK, pageName);
         clickToElement(driver, HomePageUI.MENU_SUB_LINK, pageName);
     }
+    //CustomerID
+    public CustomerPageObject inputActionsToCustomerID(WebDriver driver, Keys key) {
+        waitForElementVisible(driver, BasePageUI.CUSTOMER_ID_TEXTBOX);
+        sendKeyActionsToElement(driver, BasePageUI.CUSTOMER_ID_TEXTBOX, key);
+        return PageGeneratorManager.getCustomerPage(driver);
+    }
+
+    public void inputToCustomerID(WebDriver driver,String customerId) {
+        waitForElementVisible(driver, BasePageUI.CUSTOMER_ID_TEXTBOX);
+        sendKeyToElement(driver, BasePageUI.CUSTOMER_ID_TEXTBOX,customerId);
+    }
+
+    public String getErrorMessageAtCustomerIDTextbox(WebDriver driver) {
+        waitForElementVisible(driver, BasePageUI.CUSTOMER_ID_ERROR_MESSAGE);
+        return getElementText(driver, BasePageUI.CUSTOMER_ID_ERROR_MESSAGE);
+    }
+
 
 
 }

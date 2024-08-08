@@ -19,8 +19,8 @@ public class CustomerPageUI {
 
     public static final String ALL_LABEL = "xpath=//td[text()='%s']";
 
-    public static final String CUSTOMER_ID_TEXTBOX = "name=cusid";
-    public static final String CUSTOMER_ID_ERROR_MESSAGE= "id=message14";
+//    public static final String CUSTOMER_ID_TEXTBOX = "name=cusid";
+//    public static final String CUSTOMER_ID_ERROR_MESSAGE= "id=message14";
     public static final String SUBMIT_BUTTON = "name=AccSubmit";
     public static final String EDIT_CUSTOMER_HEADING = "class=heading3";
 }

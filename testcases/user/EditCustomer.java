@@ -31,26 +31,26 @@ public class EditCustomer extends BaseTest {
 
     @Test
     public void EC01_CustomerID_Cannot_Be_Empty() {
-        editCustomerPage.inputActionsToCustomerID(Keys.TAB);
-        Assert.assertEquals(editCustomerPage.getErrorMessageAtCustomerIDTextbox(),"Customer ID is required");
+        editCustomerPage.inputActionsToCustomerID(driver,Keys.TAB);
+        Assert.assertEquals(editCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Customer ID is required");
     }
     @Test
     public void EC02_CustomerID_Must_Be_Numeric() {
-        editCustomerPage.inputToCustomerID("12345ab");
-        Assert.assertEquals(editCustomerPage.getErrorMessageAtCustomerIDTextbox(),"Characters are not allowed");
-        editCustomerPage.inputToCustomerID("abc1234");
-        Assert.assertEquals(editCustomerPage.getErrorMessageAtCustomerIDTextbox(),"Characters are not allowed");
+        editCustomerPage.inputToCustomerID(driver,"12345ab");
+        Assert.assertEquals(editCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Characters are not allowed");
+        editCustomerPage.inputToCustomerID(driver,"abc1234");
+        Assert.assertEquals(editCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Characters are not allowed");
     }
     @Test
     public void EC03_CustomerID_Cannot_Have_Special_Character() {
-        editCustomerPage.inputToCustomerID("123#$%");
-        Assert.assertEquals(editCustomerPage.getErrorMessageAtCustomerIDTextbox(),"Special characters are not allowed");
-        editCustomerPage.inputToCustomerID("!@#$%^&*");
-        Assert.assertEquals(editCustomerPage.getErrorMessageAtCustomerIDTextbox(),"Special characters are not allowed");
+        editCustomerPage.inputToCustomerID(driver,"123#$%");
+        Assert.assertEquals(editCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Special characters are not allowed");
+        editCustomerPage.inputToCustomerID(driver,"!@#$%^&*");
+        Assert.assertEquals(editCustomerPage.getErrorMessageAtCustomerIDTextbox(driver),"Special characters are not allowed");
     }
     @Test
     public void EC04_Valid_CustomerID() {
-        editCustomerPage.inputToCustomerID("67047");
+        editCustomerPage.inputToCustomerID(driver,"67047");
         editCustomerPage.clickToEditSubmitButton();
         Assert.assertEquals(editCustomerPage.getHeadingEditCustomerPage(),"Edit Customer");
     }
@@ -165,7 +165,7 @@ public class EditCustomer extends BaseTest {
 
     @AfterClass
     public void afterClass() {
-        //driver.quit();
+        driver.quit();
     }
 
 }
