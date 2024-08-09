@@ -8,6 +8,8 @@ import user.BasePageUI;
 import user.CustomerPageUI;
 
 public class CustomerPageObject extends BasePage {
+
+
     private WebDriver driver;
 
     public CustomerPageObject(WebDriver driver) {
@@ -129,8 +131,8 @@ public class CustomerPageObject extends BasePage {
     }
 
     public void clickToEditSubmitButton() {
-        waitForElementClickable(driver, CustomerPageUI.SUBMIT_BUTTON);
-        clickToElement(driver, CustomerPageUI.SUBMIT_BUTTON);
+        waitForElementClickable(driver, CustomerPageUI.SUBMIT_EDIT_PAGE_BUTTON);
+        clickToElement(driver, CustomerPageUI.SUBMIT_EDIT_PAGE_BUTTON);
     }
 
     public String getHeadingEditCustomerPage() {
@@ -146,5 +148,35 @@ public class CustomerPageObject extends BasePage {
     public void closeAdvertisement() {
         waitForElementVisible(driver, BasePageUI.ADVERTISEMENT_IFRAME);
         switchToFrameIframe(driver, BasePageUI.ADVERTISEMENT_IFRAME);
+    }
+
+    public void selectFemale() {
+        waitForElementClickable(driver,CustomerPageUI.FEMALE_RADIO);
+        checkToDefaultCheckboxOrRadio(driver,CustomerPageUI.FEMALE_RADIO);
+    }
+
+    public void inputToDateOfBirth(String dateOfBirth) {
+        waitForElementVisible(driver,CustomerPageUI.DATE_OF_BIRTH_TEXTBOX);
+        sendKeyToElement(driver,CustomerPageUI.DATE_OF_BIRTH_TEXTBOX, dateOfBirth);
+    }
+
+    public void inputToPassword(String password) {
+        waitForElementVisible(driver,CustomerPageUI.PASSWORD_TEXTBOX);
+        sendKeyToElement(driver,CustomerPageUI.PASSWORD_TEXTBOX, password);
+    }
+
+    public void clickToNewCustomerSubmitButton() {
+        waitForElementVisible(driver,CustomerPageUI.SUBMIT_NEW_CUSTOMER_PAGE_BUTTON);
+        clickToElement(driver,CustomerPageUI.SUBMIT_NEW_CUSTOMER_PAGE_BUTTON);
+    }
+
+    public String getAddNewCustomerSuccessMessage() {
+        waitForElementVisible(driver,CustomerPageUI.ADD_NEW_CUSTOMER_SUCCESS_MESSAGE);
+        return getElementText(driver,CustomerPageUI.ADD_NEW_CUSTOMER_SUCCESS_MESSAGE);
+    }
+
+    public String getValueCustomerID() {
+        waitForElementVisible(driver,CustomerPageUI.CUSTOMER_ID_LABEL);
+        return getElementText(driver,CustomerPageUI.CUSTOMER_ID_LABEL);
     }
 }

@@ -16,9 +16,21 @@ public class CustomerPageUI {
     public static final String MOBILE_NUMBER_ERROR_MESSAGE = "id=message7";
     public static final String EMAIL_TEXTBOX = "name=emailid";
     public static final String EMAIL_ERROR_MESSAGE = "id=message9";
+    public static final String FEMALE_RADIO = "xpath=//input[@name='rad1' and @value='f']";
+    public static final String DATE_OF_BIRTH_TEXTBOX = "id=dob";
+    public static final String PASSWORD_TEXTBOX = "name=password";
+
+
+    public static final String SUBMIT_NEW_CUSTOMER_PAGE_BUTTON = "name=sub";
+    public static final String ADD_NEW_CUSTOMER_SUCCESS_MESSAGE = "class=heading3";
+    public static final String CUSTOMER_ID_LABEL = "xpath=//td[text()='Customer ID'/following-sibling::tr";
+
+
+
+
 
     public static final String ALL_LABEL = "xpath=//td[text()='%s']";
 
-    public static final String SUBMIT_BUTTON = "name=AccSubmit";
+    public static final String SUBMIT_EDIT_PAGE_BUTTON = "name=AccSubmit";
     public static final String EDIT_CUSTOMER_HEADING = "class=heading3";
 }
