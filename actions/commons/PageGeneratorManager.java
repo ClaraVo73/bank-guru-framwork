@@ -1,7 +1,10 @@
 package commons;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 import pageObjects.user.*;
+
+import java.io.Serializable;
 
 public class PageGeneratorManager {
     public static LoginPageObject getLoginPage(WebDriver driver) {

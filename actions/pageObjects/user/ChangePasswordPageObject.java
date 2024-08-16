@@ -61,4 +61,6 @@ public class ChangePasswordPageObject extends BasePage {
         waitForElementVisible(driver, ChangePasswordPageUI.CONFIRM_PASSWORD_ERROR_MESSAGE);
         return getElementText(driver, ChangePasswordPageUI.CONFIRM_PASSWORD_ERROR_MESSAGE);
     }
+
+
 }
