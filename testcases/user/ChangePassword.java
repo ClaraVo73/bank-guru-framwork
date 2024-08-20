@@ -28,6 +28,7 @@ public class ChangePassword extends BaseTest {
         homePage = loginPage.loginUser(GlobalConstants.USER_NAME, GlobalConstants.PASSWORD);
         homePage.openPagesFromMenuSub(driver, "Change Password");
         changePasswordPage = PageGeneratorManager.getChangePasswordPage(driver);
+        changePasswordPage.closeGoogleAds(driver);
     }
 
     @Test

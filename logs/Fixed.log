@@ -39,3 +39,66 @@
 [16-08-2024 10:03:49.808 INFO user.ChangePassword] - ---------------------- Passed -----------------------
 [16-08-2024 10:28:49.116 INFO user.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
 [16-08-2024 11:20:00.186 INFO user.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 21:39:25.009 INFO user.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 21:45:48.391 INFO user.CloseAd] - Failed to close ad: Expected condition failed: waiting for element to be clickable: By.cssSelector: div[role='button'][aria-label='Close'] (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 21:45:48.412 INFO user.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 21:48:28.426 INFO user.CloseAd] - Failed to close ad: Expected condition failed: waiting for element to be clickable: By.cssSelector: div[role='button'][aria-label='Close'] (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 21:57:10.768 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 21:57:30.846 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: div[role='button'][aria-label='Close'] (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 22:20:43.024 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 22:20:44.913 INFO user.CloseAd] - Ad closed successfully.
+[19-08-2024 22:21:33.683 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 22:21:34.333 INFO user.CloseAd] - Ad closed successfully.
+[19-08-2024 22:21:54.603 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 22:21:54.765 INFO user.CloseAd] - Ad closed successfully.
+[19-08-2024 22:28:33.115 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 22:28:33.278 INFO user.ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
+[19-08-2024 22:28:33.354 INFO user.ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:33.357 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[19-08-2024 22:28:33.444 INFO user.ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
+[19-08-2024 22:28:33.523 INFO user.ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank 
+[19-08-2024 22:28:33.572 INFO user.ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:33.573 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[19-08-2024 22:28:33.686 INFO user.ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
+[19-08-2024 22:28:33.728 INFO user.ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:33.729 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[19-08-2024 22:28:33.888 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[19-08-2024 22:28:33.939 INFO user.ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:33.940 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
+[19-08-2024 22:28:34.115 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[19-08-2024 22:28:34.152 INFO user.ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:34.152 INFO user.ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
+[19-08-2024 22:28:34.302 INFO user.ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
+[19-08-2024 22:28:34.414 INFO user.ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank 
+[19-08-2024 22:28:34.455 INFO user.ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:34.463 INFO user.ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
+[19-08-2024 22:28:34.593 INFO user.ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
+[19-08-2024 22:28:34.665 INFO user.ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:42:40.970 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 22:43:21.643 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[19-08-2024 22:44:02.252 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[19-08-2024 22:44:42.959 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[19-08-2024 22:45:35.627 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 22:46:16.211 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[19-08-2024 22:46:56.818 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[19-08-2024 22:47:37.418 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[19-08-2024 22:48:18.072 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
+[19-08-2024 22:48:37.858 INFO user.ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
+[19-08-2024 22:48:54.859 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 22:49:15.006 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button svg (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 22:50:07.717 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 22:50:27.832 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 22:50:51.133 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 22:51:11.223 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 23:13:00.936 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 23:13:01.087 INFO user.CloseAd] - Ad closed successfully.
+[19-08-2024 23:14:05.246 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 23:14:25.321 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 23:15:50.305 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 23:16:10.399 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 23:17:44.067 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 23:18:04.136 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 23:19:01.587 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 23:19:21.801 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 23:19:50.582 INFO user.CloseAd] - Iframe content: Ad
+[19-08-2024 23:19:50.715 INFO user.CloseAd] - Ad closed successfully.
