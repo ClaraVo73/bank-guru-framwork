@@ -12,7 +12,7 @@
 <body>
 <h1>Run on Chrome</h1>
 <p>
-  Test duration: 14.604s
+  Test duration: 13.630s
 </p>
 
 
@@ -22,22 +22,139 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">user.CloseAd</td>
+        <td colspan="3" class="group">user.ChangePassword</td>
       </tr>
             
 <tr>
   <td class="method">
-                  Close_Google_Ads
+                  CP01_Old_Password_Cannot_Be_Empty
       </td>
   <td class="duration">
-    1.349s
+    0.308s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Iframe content: Ad<br />
-                                Ad closed successfully.<br />
+                        CP01_Old_Password - Step 01: Press tab at old password textbox<br />
+                                CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank<br />
+                                ---------------------- Passed -----------------------<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  CP02_New_Password_Cannot_Be_Empty
+      </td>
+  <td class="duration">
+    0.314s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        CP02_New_Password - Step 01: Input valid old password textbox<br />
+                                CP02_New_Password - Step 02: Press tab at new password textbox<br />
+                                CP02_New_Password - Step 03: Verify show error message: New Password must not be blank <br />
+                                ---------------------- Passed -----------------------<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  CP03_New_Password_Must_Have_One_Numeric_Value
+      </td>
+  <td class="duration">
+    0.217s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        CP03_New_Password - Step 01: Input new password without numeric value<br />
+                                CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value<br />
+                                ---------------------- Passed -----------------------<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  CP04_New_Password_Must_Have_One_Special_Character
+      </td>
+  <td class="duration">
+    0.216s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        CP04_New_Password - Step 01: Input new password without special character<br />
+                                CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character<br />
+                                ---------------------- Passed -----------------------<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  CP05_New_Password_Cannot_Have_String_Password
+      </td>
+  <td class="duration">
+    0.204s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        CP04_New_Password - Step 01: Input a simple new password with &apos;password&apos;<br />
+                                CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character<br />
+                                ---------------------- Passed -----------------------<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  CP06_Confirm_Password_Cannot_Be_Empty
+      </td>
+  <td class="duration">
+    0.298s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        CP06_Confirm_Password - Step 01: Press valid password<br />
+                                CP06_Confirm_Password - Step 02: Press tab at confirm password<br />
+                                CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank <br />
+                                ---------------------- Passed -----------------------<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  CP07_Confirm_Password_And_New_Password_Must_Be_Matched
+      </td>
+  <td class="duration">
+    0.229s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        CP07_Confirm_Password - Step 01: Input confirm password does not matched new password<br />
+                                CP07_Confirm_Password - Step 02: Input confirm password does not matched new password<br />
+                                ---------------------- Passed -----------------------<br />
                   </div>
     
 

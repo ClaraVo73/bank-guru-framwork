@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.349">
+           time="1.068">
   <properties />
   
   
-            <testcase name="Close_Google_Ads" time="1.349" classname="user.CloseAd" />
+            <testcase name="Close_Google_Ads" time="1.068" classname="user.CloseAd" />
       
 </testsuite>
