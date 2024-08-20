@@ -15,7 +15,7 @@ import pageObjects.user.LoginPageObject;
 
 import java.util.Random;
 
-public class EditAccount extends BaseTest {
+public class User_02_EditAccount extends BaseTest {
     private LoginPageObject loginPage;
     private HomePageObject homePage;
     private AccountPageObject editAccountPage;
@@ -28,50 +28,47 @@ public class EditAccount extends BaseTest {
         homePage = loginPage.loginUser(GlobalConstants.USER_NAME, GlobalConstants.PASSWORD);
         homePage.openPagesFromMenuSub(driver, "Edit Account");
         editAccountPage = PageGeneratorManager.getAccountPage(driver);
+        editAccountPage.closeGoogleAds(driver);
     }
 
     @Test
     public void EA01_Initial_Deposit_Cannot_Be_Empty() {
-        editAccountPage.inputActionsToAccountNoTextbox(driver,Keys.TAB);
+        editAccountPage.inputActionsToAccountNoTextbox(driver, Keys.TAB);
         Assert.assertEquals(editAccountPage.getErrorMessageAtAccountNoTextbox(driver), "Account Number must not be blank");
     }
 
     @Test
     public void EA02_Initial_Deposit_Must_Be_Numeric() {
-        editAccountPage.inputToAccountNoTextbox(driver,"12345ab");
+        editAccountPage.inputToAccountNoTextbox(driver, "12345ab");
         Assert.assertEquals(editAccountPage.getErrorMessageAtAccountNoTextbox(driver), "Characters are not allowed");
-        editAccountPage.inputToAccountNoTextbox(driver,"abc1234");
+        editAccountPage.inputToAccountNoTextbox(driver, "abc1234");
         Assert.assertEquals(editAccountPage.getErrorMessageAtAccountNoTextbox(driver), "Characters are not allowed");
     }
 
     @Test
     public void EA03_Initial_Deposit_Cannot_Have_Special_Character() {
-        editAccountPage.inputToAccountNoTextbox(driver,"123#$%");
+        editAccountPage.inputToAccountNoTextbox(driver, "123#$%");
         Assert.assertEquals(editAccountPage.getErrorMessageAtAccountNoTextbox(driver), "Special characters are not allowed");
-        editAccountPage.inputToAccountNoTextbox(driver,"!@#$%^&*");
+        editAccountPage.inputToAccountNoTextbox(driver, "!@#$%^&*");
         Assert.assertEquals(editAccountPage.getErrorMessageAtAccountNoTextbox(driver), "Special characters are not allowed");
     }
 
     @Test
     public void EA04_Initial_Deposit_Cannot_Have_Blank_Space() {
-        editAccountPage.inputToAccountNoTextbox(driver,"123 456");
+        editAccountPage.inputToAccountNoTextbox(driver, "123 456");
         Assert.assertEquals(editAccountPage.getErrorMessageAtAccountNoTextbox(driver), "Characters are not allowed");
     }
 
     @Test
     public void EA05_Initial_Deposit_First_Character_Cannot_Be_Space() {
-        editAccountPage.inputToAccountNoTextbox(driver," 12345");
+        editAccountPage.inputToAccountNoTextbox(driver, " 12345");
         Assert.assertEquals(editAccountPage.getErrorMessageAtAccountNoTextbox(driver), "First character can not have space");
     }
 
-    @AfterClass
-    public void afterClass() {
-        driver.quit();
-    }
 
-    public int numberRandom() {
-        Random rand = new Random();
-        return rand.nextInt(99999);
+    @AfterClass(alwaysRun = true)
+    public void afterClass() {
+        closeBrowserDriver();
     }
 
 }

@@ -13,9 +13,7 @@ import pageObjects.user.HomePageObject;
 import pageObjects.user.LoginPageObject;
 import pageObjects.user.CustomerPageObject;
 
-import java.util.Random;
-
-public class NewCustomer extends BaseTest {
+public class User_04_NewCustomer extends BaseTest {
     private LoginPageObject loginPage;
     private HomePageObject homePage;
     private CustomerPageObject newCustomerPage;
@@ -26,9 +24,9 @@ public class NewCustomer extends BaseTest {
         driver = getBrowserDriver(browserName, environmentName);
         loginPage = PageGeneratorManager.getLoginPage(driver);
         homePage = loginPage.loginUser(GlobalConstants.USER_NAME, GlobalConstants.PASSWORD);
-        homePage.openPagesFromMenuSub(driver,"New Customer");
+        homePage.openPagesFromMenuSub(driver, "New Customer");
         newCustomerPage = PageGeneratorManager.getCustomerPage(driver);
-       // newCustomerPage.closeAdvertisement();
+        newCustomerPage.closeGoogleAds(driver);
     }
 
     @Test
@@ -233,10 +231,9 @@ public class NewCustomer extends BaseTest {
         Assert.assertTrue(newCustomerPage.isAllLabelsAtNewCustomerPageDisplayed("Password"));
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void afterClass() {
-       //driver.quit();
+        closeBrowserDriver();
     }
-
 
 }

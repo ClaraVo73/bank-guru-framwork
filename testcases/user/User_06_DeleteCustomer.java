@@ -13,7 +13,7 @@ import pageObjects.user.CustomerPageObject;
 import pageObjects.user.HomePageObject;
 import pageObjects.user.LoginPageObject;
 
-public class DeleteCustomer extends BaseTest {
+public class User_06_DeleteCustomer extends BaseTest {
     private HomePageObject homePage;
     private LoginPageObject loginPage;
     private CustomerPageObject deleteCustomerPage;
@@ -26,6 +26,7 @@ public class DeleteCustomer extends BaseTest {
         homePage = loginPage.loginUser(GlobalConstants.USER_NAME, GlobalConstants.PASSWORD);
         homePage.openPagesFromMenuSub(driver, "Delete Customer");
         deleteCustomerPage = PageGeneratorManager.getCustomerPage(driver);
+        deleteCustomerPage.closeGoogleAds(driver);
     }
 
     @Test
@@ -62,10 +63,9 @@ public class DeleteCustomer extends BaseTest {
         Assert.assertEquals(deleteCustomerPage.getErrorMessageAtCustomerIDTextbox(driver), "Characters are not allowed");
     }
 
-
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void afterClass() {
-        //driver.quit();
+        closeBrowserDriver();
     }
 
 }

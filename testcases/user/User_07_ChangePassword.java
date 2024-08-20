@@ -4,7 +4,6 @@ import commons.BaseTest;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.Keys;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -13,9 +12,7 @@ import pageObjects.user.ChangePasswordPageObject;
 import pageObjects.user.HomePageObject;
 import pageObjects.user.LoginPageObject;
 
-import java.util.Random;
-
-public class ChangePassword extends BaseTest {
+public class User_07_ChangePassword extends BaseTest {
     private LoginPageObject loginPage;
     private HomePageObject homePage;
     private ChangePasswordPageObject changePasswordPage;
@@ -100,9 +97,9 @@ public class ChangePassword extends BaseTest {
         verifyEquals(changePasswordPage.getErrorMessageAtConfirmPasswordTextbox(), "Passwords do not Match");
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void afterClass() {
-        driver.quit();
+        closeBrowserDriver();
     }
 
 

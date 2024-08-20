@@ -8,10 +8,10 @@
     </listeners>
     <parameter name="environment" value="Staging"></parameter>
 
-    <test name="Run on Chrome">
+    <test name="Run on Chrome" preserve-order="true">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="user.ChangePassword"></class>
+            <class name="user.User_07_ChangePassword"></class>
         </classes>
 
     </test>

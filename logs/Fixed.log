@@ -1,183 +1,190 @@
-[16-08-2024 10:00:42.085 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[16-08-2024 10:00:49.115 INFO user.ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
-[16-08-2024 10:00:49.178 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
-[16-08-2024 10:00:49.306 INFO user.ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
-[16-08-2024 10:00:49.509 INFO user.ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank 
-[16-08-2024 10:00:49.578 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
-[16-08-2024 10:00:49.709 INFO user.ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
-[16-08-2024 10:00:49.767 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
-[16-08-2024 10:00:49.916 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[16-08-2024 10:00:49.988 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
-[16-08-2024 10:00:50.142 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[16-08-2024 10:00:50.202 INFO user.ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
-[16-08-2024 10:00:50.322 INFO user.ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
-[16-08-2024 10:00:50.446 INFO user.ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank 
-[16-08-2024 10:00:50.496 INFO user.ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
-[16-08-2024 10:00:50.619 INFO user.ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
-[16-08-2024 10:03:43.679 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[16-08-2024 10:03:48.097 INFO user.ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
-[16-08-2024 10:03:48.196 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[16-08-2024 10:03:48.198 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
-[16-08-2024 10:03:48.349 INFO user.ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
-[16-08-2024 10:03:48.544 INFO user.ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank 
-[16-08-2024 10:03:48.623 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[16-08-2024 10:03:48.624 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
-[16-08-2024 10:03:48.792 INFO user.ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
-[16-08-2024 10:03:48.840 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[16-08-2024 10:03:48.840 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
-[16-08-2024 10:03:48.983 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[16-08-2024 10:03:49.042 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[16-08-2024 10:03:49.043 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
-[16-08-2024 10:03:49.182 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[16-08-2024 10:03:49.230 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[16-08-2024 10:03:49.231 INFO user.ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
-[16-08-2024 10:03:49.365 INFO user.ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
-[16-08-2024 10:03:49.580 INFO user.ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank 
-[16-08-2024 10:03:49.637 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[16-08-2024 10:03:49.638 INFO user.ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
-[16-08-2024 10:03:49.758 INFO user.ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
-[16-08-2024 10:03:49.808 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[16-08-2024 10:28:49.116 INFO user.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[16-08-2024 11:20:00.186 INFO user.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[19-08-2024 21:39:25.009 INFO user.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[19-08-2024 21:45:48.391 INFO user.CloseAd] - Failed to close ad: Expected condition failed: waiting for element to be clickable: By.cssSelector: div[role='button'][aria-label='Close'] (tried for 20 second(s) with 500 milliseconds interval)
-[19-08-2024 21:45:48.412 INFO user.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[19-08-2024 21:48:28.426 INFO user.CloseAd] - Failed to close ad: Expected condition failed: waiting for element to be clickable: By.cssSelector: div[role='button'][aria-label='Close'] (tried for 20 second(s) with 500 milliseconds interval)
-[19-08-2024 21:57:10.768 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 21:57:30.846 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: div[role='button'][aria-label='Close'] (tried for 20 second(s) with 500 milliseconds interval)
-[19-08-2024 22:20:43.024 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 22:20:44.913 INFO user.CloseAd] - Ad closed successfully.
-[19-08-2024 22:21:33.683 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 22:21:34.333 INFO user.CloseAd] - Ad closed successfully.
-[19-08-2024 22:21:54.603 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 22:21:54.765 INFO user.CloseAd] - Ad closed successfully.
-[19-08-2024 22:28:33.115 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[19-08-2024 22:28:33.278 INFO user.ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
-[19-08-2024 22:28:33.354 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[19-08-2024 22:28:33.357 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
-[19-08-2024 22:28:33.444 INFO user.ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
-[19-08-2024 22:28:33.523 INFO user.ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank 
-[19-08-2024 22:28:33.572 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[19-08-2024 22:28:33.573 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
-[19-08-2024 22:28:33.686 INFO user.ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
-[19-08-2024 22:28:33.728 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[19-08-2024 22:28:33.729 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
-[19-08-2024 22:28:33.888 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[19-08-2024 22:28:33.939 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[19-08-2024 22:28:33.940 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
-[19-08-2024 22:28:34.115 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[19-08-2024 22:28:34.152 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[19-08-2024 22:28:34.152 INFO user.ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
-[19-08-2024 22:28:34.302 INFO user.ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
-[19-08-2024 22:28:34.414 INFO user.ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank 
-[19-08-2024 22:28:34.455 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[19-08-2024 22:28:34.463 INFO user.ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
-[19-08-2024 22:28:34.593 INFO user.ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
-[19-08-2024 22:28:34.665 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[19-08-2024 22:42:40.970 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[19-08-2024 22:43:21.643 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
-[19-08-2024 22:44:02.252 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
-[19-08-2024 22:44:42.959 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
-[19-08-2024 22:45:35.627 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[19-08-2024 22:46:16.211 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
-[19-08-2024 22:46:56.818 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
-[19-08-2024 22:47:37.418 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
-[19-08-2024 22:48:18.072 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
-[19-08-2024 22:48:37.858 INFO user.ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
-[19-08-2024 22:48:54.859 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 22:49:15.006 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button svg (tried for 20 second(s) with 500 milliseconds interval)
-[19-08-2024 22:50:07.717 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 22:50:27.832 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
-[19-08-2024 22:50:51.133 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 22:51:11.223 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
-[19-08-2024 23:13:00.936 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 23:13:01.087 INFO user.CloseAd] - Ad closed successfully.
-[19-08-2024 23:14:05.246 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 23:14:25.321 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
-[19-08-2024 23:15:50.305 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 23:16:10.399 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
-[19-08-2024 23:17:44.067 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 23:18:04.136 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
-[19-08-2024 23:19:01.587 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 23:19:21.801 ERROR user.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
-[19-08-2024 23:19:50.582 INFO user.CloseAd] - Iframe content: Ad
-[19-08-2024 23:19:50.715 INFO user.CloseAd] - Ad closed successfully.
-[20-08-2024 08:01:47.738 INFO user.CloseAd] - Iframe content: Ad
-[20-08-2024 08:01:47.908 INFO user.CloseAd] - Ad closed successfully.
-[20-08-2024 08:03:07.733 INFO user.CloseAd] - Iframe content: Ad
-[20-08-2024 08:03:07.870 INFO user.CloseAd] - Ad closed successfully.
-[20-08-2024 08:03:33.132 INFO user.CloseAd] - Iframe content: Ad
-[20-08-2024 08:03:33.254 INFO user.CloseAd] - Ad closed successfully.
-[20-08-2024 08:03:58.899 INFO user.CloseAd] - Iframe content: Ad
-[20-08-2024 08:03:59.032 INFO user.CloseAd] - Ad closed successfully.
-[20-08-2024 08:04:22.467 INFO user.CloseAd] - Iframe content: Ad
-[20-08-2024 08:04:22.582 INFO user.CloseAd] - Ad closed successfully.
-[20-08-2024 08:06:02.711 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[20-08-2024 08:06:02.956 INFO user.ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
-[20-08-2024 08:06:03.031 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:03.032 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
-[20-08-2024 08:06:03.189 INFO user.ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
-[20-08-2024 08:06:03.355 INFO user.ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank 
-[20-08-2024 08:06:03.412 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:03.412 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
-[20-08-2024 08:06:03.536 INFO user.ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
-[20-08-2024 08:06:03.584 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:03.585 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
-[20-08-2024 08:06:03.733 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[20-08-2024 08:06:03.782 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:03.782 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
-[20-08-2024 08:06:03.917 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[20-08-2024 08:06:03.978 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:03.979 INFO user.ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
-[20-08-2024 08:06:04.116 INFO user.ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
-[20-08-2024 08:06:04.234 INFO user.ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank 
-[20-08-2024 08:06:04.287 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:04.288 INFO user.ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
-[20-08-2024 08:06:04.406 INFO user.ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
-[20-08-2024 08:06:04.457 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:32.709 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[20-08-2024 08:06:32.926 INFO user.ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
-[20-08-2024 08:06:32.993 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:32.995 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
-[20-08-2024 08:06:33.120 INFO user.ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
-[20-08-2024 08:06:33.238 INFO user.ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank 
-[20-08-2024 08:06:33.306 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:33.306 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
-[20-08-2024 08:06:33.448 INFO user.ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
-[20-08-2024 08:06:33.497 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:33.498 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
-[20-08-2024 08:06:33.649 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[20-08-2024 08:06:33.700 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:33.701 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
-[20-08-2024 08:06:33.829 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[20-08-2024 08:06:33.886 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:33.887 INFO user.ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
-[20-08-2024 08:06:34.014 INFO user.ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
-[20-08-2024 08:06:34.140 INFO user.ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank 
-[20-08-2024 08:06:34.207 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:34.208 INFO user.ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
-[20-08-2024 08:06:34.335 INFO user.ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
-[20-08-2024 08:06:34.385 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:50.435 INFO user.ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
-[20-08-2024 08:06:50.672 INFO user.ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
-[20-08-2024 08:06:50.742 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:50.744 INFO user.ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
-[20-08-2024 08:06:50.864 INFO user.ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
-[20-08-2024 08:06:50.982 INFO user.ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank 
-[20-08-2024 08:06:51.057 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:51.058 INFO user.ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
-[20-08-2024 08:06:51.226 INFO user.ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
-[20-08-2024 08:06:51.275 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:51.276 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
-[20-08-2024 08:06:51.444 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[20-08-2024 08:06:51.492 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:51.492 INFO user.ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
-[20-08-2024 08:06:51.649 INFO user.ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
-[20-08-2024 08:06:51.695 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:51.696 INFO user.ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
-[20-08-2024 08:06:51.820 INFO user.ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
-[20-08-2024 08:06:51.936 INFO user.ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank 
-[20-08-2024 08:06:51.994 INFO user.ChangePassword] - ---------------------- Passed -----------------------
-[20-08-2024 08:06:51.995 INFO user.ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
-[20-08-2024 08:06:52.179 INFO user.ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
-[20-08-2024 08:06:52.224 INFO user.ChangePassword] - ---------------------- Passed -----------------------
+[16-08-2024 10:00:42.085 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[16-08-2024 10:00:49.115 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
+[16-08-2024 10:00:49.178 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[16-08-2024 10:00:49.306 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
+[16-08-2024 10:00:49.509 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank
+[16-08-2024 10:00:49.578 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[16-08-2024 10:00:49.709 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
+[16-08-2024 10:00:49.767 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[16-08-2024 10:00:49.916 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[16-08-2024 10:00:49.988 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
+[16-08-2024 10:00:50.142 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[16-08-2024 10:00:50.202 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
+[16-08-2024 10:00:50.322 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
+[16-08-2024 10:00:50.446 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank
+[16-08-2024 10:00:50.496 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
+[16-08-2024 10:00:50.619 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
+[16-08-2024 10:03:43.679 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[16-08-2024 10:03:48.097 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
+[16-08-2024 10:03:48.196 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[16-08-2024 10:03:48.198 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[16-08-2024 10:03:48.349 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
+[16-08-2024 10:03:48.544 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank
+[16-08-2024 10:03:48.623 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[16-08-2024 10:03:48.624 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[16-08-2024 10:03:48.792 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
+[16-08-2024 10:03:48.840 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[16-08-2024 10:03:48.840 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[16-08-2024 10:03:48.983 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[16-08-2024 10:03:49.042 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[16-08-2024 10:03:49.043 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
+[16-08-2024 10:03:49.182 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[16-08-2024 10:03:49.230 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[16-08-2024 10:03:49.231 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
+[16-08-2024 10:03:49.365 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
+[16-08-2024 10:03:49.580 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank
+[16-08-2024 10:03:49.637 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[16-08-2024 10:03:49.638 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
+[16-08-2024 10:03:49.758 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
+[16-08-2024 10:03:49.808 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[16-08-2024 10:28:49.116 INFO template.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[16-08-2024 11:20:00.186 INFO template.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 21:39:25.009 INFO template.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 21:45:48.391 INFO template.CloseAd] - Failed to close ad: Expected condition failed: waiting for element to be clickable: By.cssSelector: div[role='button'][aria-label='Close'] (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 21:45:48.412 INFO template.CloseAd] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 21:48:28.426 INFO template.CloseAd] - Failed to close ad: Expected condition failed: waiting for element to be clickable: By.cssSelector: div[role='button'][aria-label='Close'] (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 21:57:10.768 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 21:57:30.846 ERROR template.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: div[role='button'][aria-label='Close'] (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 22:20:43.024 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 22:20:44.913 INFO template.CloseAd] - Ad closed successfully.
+[19-08-2024 22:21:33.683 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 22:21:34.333 INFO template.CloseAd] - Ad closed successfully.
+[19-08-2024 22:21:54.603 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 22:21:54.765 INFO template.CloseAd] - Ad closed successfully.
+[19-08-2024 22:28:33.115 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 22:28:33.278 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
+[19-08-2024 22:28:33.354 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:33.357 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[19-08-2024 22:28:33.444 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
+[19-08-2024 22:28:33.523 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank
+[19-08-2024 22:28:33.572 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:33.573 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[19-08-2024 22:28:33.686 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
+[19-08-2024 22:28:33.728 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:33.729 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[19-08-2024 22:28:33.888 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[19-08-2024 22:28:33.939 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:33.940 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
+[19-08-2024 22:28:34.115 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[19-08-2024 22:28:34.152 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:34.152 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
+[19-08-2024 22:28:34.302 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
+[19-08-2024 22:28:34.414 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank
+[19-08-2024 22:28:34.455 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:28:34.463 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
+[19-08-2024 22:28:34.593 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
+[19-08-2024 22:28:34.665 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[19-08-2024 22:42:40.970 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 22:43:21.643 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[19-08-2024 22:44:02.252 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[19-08-2024 22:44:42.959 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[19-08-2024 22:45:35.627 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[19-08-2024 22:46:16.211 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[19-08-2024 22:46:56.818 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[19-08-2024 22:47:37.418 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[19-08-2024 22:48:18.072 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
+[19-08-2024 22:48:37.858 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
+[19-08-2024 22:48:54.859 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 22:49:15.006 ERROR template.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button svg (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 22:50:07.717 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 22:50:27.832 ERROR template.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 22:50:51.133 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 22:51:11.223 ERROR template.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 23:13:00.936 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 23:13:01.087 INFO template.CloseAd] - Ad closed successfully.
+[19-08-2024 23:14:05.246 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 23:14:25.321 ERROR template.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 23:15:50.305 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 23:16:10.399 ERROR template.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 23:17:44.067 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 23:18:04.136 ERROR template.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 23:19:01.587 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 23:19:21.801 ERROR template.CloseAd] - Failed to close ad: Expected condition failed: waiting for visibility of element located by By.cssSelector: #dismiss-button (tried for 20 second(s) with 500 milliseconds interval)
+[19-08-2024 23:19:50.582 INFO template.CloseAd] - Iframe content: Ad
+[19-08-2024 23:19:50.715 INFO template.CloseAd] - Ad closed successfully.
+[20-08-2024 08:01:47.738 INFO template.CloseAd] - Iframe content: Ad
+[20-08-2024 08:01:47.908 INFO template.CloseAd] - Ad closed successfully.
+[20-08-2024 08:03:07.733 INFO template.CloseAd] - Iframe content: Ad
+[20-08-2024 08:03:07.870 INFO template.CloseAd] - Ad closed successfully.
+[20-08-2024 08:03:33.132 INFO template.CloseAd] - Iframe content: Ad
+[20-08-2024 08:03:33.254 INFO template.CloseAd] - Ad closed successfully.
+[20-08-2024 08:03:58.899 INFO template.CloseAd] - Iframe content: Ad
+[20-08-2024 08:03:59.032 INFO template.CloseAd] - Ad closed successfully.
+[20-08-2024 08:04:22.467 INFO template.CloseAd] - Iframe content: Ad
+[20-08-2024 08:04:22.582 INFO template.CloseAd] - Ad closed successfully.
+[20-08-2024 08:06:02.711 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[20-08-2024 08:06:02.956 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
+[20-08-2024 08:06:03.031 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:03.032 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[20-08-2024 08:06:03.189 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
+[20-08-2024 08:06:03.355 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank
+[20-08-2024 08:06:03.412 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:03.412 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[20-08-2024 08:06:03.536 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
+[20-08-2024 08:06:03.584 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:03.585 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[20-08-2024 08:06:03.733 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[20-08-2024 08:06:03.782 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:03.782 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
+[20-08-2024 08:06:03.917 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[20-08-2024 08:06:03.978 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:03.979 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
+[20-08-2024 08:06:04.116 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
+[20-08-2024 08:06:04.234 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank
+[20-08-2024 08:06:04.287 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:04.288 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
+[20-08-2024 08:06:04.406 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
+[20-08-2024 08:06:04.457 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:32.709 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[20-08-2024 08:06:32.926 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
+[20-08-2024 08:06:32.993 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:32.995 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[20-08-2024 08:06:33.120 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
+[20-08-2024 08:06:33.238 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank
+[20-08-2024 08:06:33.306 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:33.306 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[20-08-2024 08:06:33.448 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
+[20-08-2024 08:06:33.497 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:33.498 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[20-08-2024 08:06:33.649 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[20-08-2024 08:06:33.700 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:33.701 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
+[20-08-2024 08:06:33.829 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[20-08-2024 08:06:33.886 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:33.887 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
+[20-08-2024 08:06:34.014 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
+[20-08-2024 08:06:34.140 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank
+[20-08-2024 08:06:34.207 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:34.208 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
+[20-08-2024 08:06:34.335 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
+[20-08-2024 08:06:34.385 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:50.435 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[20-08-2024 08:06:50.672 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 02: Verify show error message: Old Password must not be blank
+[20-08-2024 08:06:50.742 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:50.744 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[20-08-2024 08:06:50.864 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 02: Press tab at new password textbox
+[20-08-2024 08:06:50.982 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 03: Verify show error message: New Password must not be blank
+[20-08-2024 08:06:51.057 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:51.058 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[20-08-2024 08:06:51.226 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 02: Verify show error message: Enter at-least one numeric value
+[20-08-2024 08:06:51.275 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:51.276 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[20-08-2024 08:06:51.444 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[20-08-2024 08:06:51.492 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:51.492 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
+[20-08-2024 08:06:51.649 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 02: Verify show error message: Enter at-least one special character
+[20-08-2024 08:06:51.695 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:51.696 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
+[20-08-2024 08:06:51.820 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 02: Press tab at confirm password
+[20-08-2024 08:06:51.936 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 03: Verify show error message:Confirm Password must not be blank
+[20-08-2024 08:06:51.994 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:06:51.995 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password
+[20-08-2024 08:06:52.179 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 02: Input confirm password does not matched new password
+[20-08-2024 08:06:52.224 INFO user.User_07_ChangePassword] - ---------------------- Passed -----------------------
+[20-08-2024 08:21:42.019 INFO user.User_07_ChangePassword] - CP01_Old_Password - Step 01: Press tab at old password textbox
+[20-08-2024 08:21:52.331 INFO user.User_07_ChangePassword] - CP02_New_Password - Step 01: Input valid old password textbox
+[20-08-2024 08:22:32.923 INFO user.User_07_ChangePassword] - CP03_New_Password - Step 01: Input new password without numeric value
+[20-08-2024 08:23:13.480 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input new password without special character
+[20-08-2024 08:23:54.083 INFO user.User_07_ChangePassword] - CP04_New_Password - Step 01: Input a simple new password with 'password'
+[20-08-2024 08:24:34.637 INFO user.User_07_ChangePassword] - CP06_Confirm_Password - Step 01: Press valid password
+[20-08-2024 08:25:15.219 INFO user.User_07_ChangePassword] - CP07_Confirm_Password - Step 01: Input confirm password does not matched new password

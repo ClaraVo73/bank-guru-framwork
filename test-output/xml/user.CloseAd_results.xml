@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="Close_Google_Ads" time="1.068" classname="user.CloseAd" />
+            <testcase name="Close_Google_Ads" time="1.068" classname="template.CloseAd" />
       
 </testsuite>

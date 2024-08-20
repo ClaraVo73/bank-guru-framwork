@@ -1,4 +1,4 @@
-package user;
+package template;
 
 import commons.BaseTest;
 import commons.GlobalConstants;

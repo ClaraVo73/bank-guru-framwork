@@ -15,7 +15,7 @@ import pageObjects.user.LoginPageObject;
 
 import java.util.Random;
 
-public class NewAccount extends BaseTest {
+public class User_01_NewAccount extends BaseTest {
     private LoginPageObject loginPage;
     private HomePageObject homePage;
     private AccountPageObject newAccountPage;
@@ -28,6 +28,7 @@ public class NewAccount extends BaseTest {
         homePage = loginPage.loginUser(GlobalConstants.USER_NAME, GlobalConstants.PASSWORD);
         homePage.openPagesFromMenuSub(driver, "New Account");
         newAccountPage = PageGeneratorManager.getAccountPage(driver);
+        newAccountPage.closeGoogleAds(driver);
     }
 
     @Test
@@ -98,14 +99,9 @@ public class NewAccount extends BaseTest {
         Assert.assertEquals(newAccountPage.getErrorMessageAtInitialDepositTextbox(), "First character can not have space");
     }
 
-    @AfterClass
+    @AfterClass (alwaysRun = true)
     public void afterClass() {
-        driver.quit();
-    }
-
-    public int numberRandom() {
-        Random rand = new Random();
-        return rand.nextInt(99999);
+        closeBrowserDriver();
     }
 
 }

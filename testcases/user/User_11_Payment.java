@@ -14,7 +14,7 @@ import pageObjects.user.LoginPageObject;
 
 import java.util.Random;
 
-public class Payment extends BaseTest {
+public class User_11_Payment extends BaseTest {
     private LoginPageObject loginPage;
     private HomePageObject homePage;
     private CustomerPageObject newCustomerPage;
@@ -28,6 +28,7 @@ public class Payment extends BaseTest {
         homePage = loginPage.loginUser(GlobalConstants.USER_NAME, GlobalConstants.PASSWORD);
         homePage.openPagesFromMenuSub(driver, "New Customer");
         newCustomerPage = PageGeneratorManager.getCustomerPage(driver);
+        newCustomerPage.closeGoogleAds(driver);
 
         emailAddress = "hangan" + numberRandom() + "@gmail.com";
     }
@@ -48,17 +49,18 @@ public class Payment extends BaseTest {
 
         newCustomerPage.clickToNewCustomerSubmitButton();
         newCustomerPage.sleepInSecond(100);
-        Assert.assertEquals(newCustomerPage.getAddNewCustomerSuccessMessage(),"Customer Registered Successfully!!!");
+        Assert.assertEquals(newCustomerPage.getAddNewCustomerSuccessMessage(), "Customer Registered Successfully!!!");
     }
+
     //@Test
     public void PM02_() {
         customerID = newCustomerPage.getValueCustomerID();
 
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void afterClass() {
-        driver.quit();
+        closeBrowserDriver();
     }
 
     public int numberRandom() {
